@@ -1,0 +1,170 @@
+:root {
+  --brand-color: #2196f3;
+  --main-bcg-color: #ffffff;
+  --filter-btn-color: #f5f4fa;
+  --brand-text-color1: #212121;
+  --brand-text-color2: #757575;
+  --footer-color: #2f303a;
+}
+h3 {
+  font-family: "Roboto", sans-serif;
+  color: var(--brand-text-color1);
+  background-color: var(--main-bcg-color);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+}
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: var(--brand-text-color1);
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--brand-text-color1);
+  background-color: var(--main-bcg-color);
+}
+
+/* ---------- Шапка сайта (Хеддер) ---------- */
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  /*background-color: var(--main-bcg-color);*/
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.4;
+  letter-spacing: 0.03em;
+}
+.logo-web {
+  color: var(--brand-color);
+}
+.logo-studio-top {
+  color: var(--brand-text-color1);
+}
+.site-nav-item {
+  font-family: "Roboto", sans-serif;
+  color: var(--brand-text-color1);
+  background-color: var(--main-bcg-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+}
+.site-nav-item:hover,
+.site-nav-item:focus {
+  color: var(--brand-color);
+}
+/*.site-nav-info-top {
+  font-family: "Roboto", sans-serif;
+  color: var(--brand-text-color1);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+}
+.site-nav-link {
+  font-family: "Roboto", sans-serif;
+  color: var(--brand-text-color1);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+}
+/*.nav-info-top {
+  font-family: "Roboto", sans-serif;
+  color: var(--brand-text-color2);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+} 
+.nav-info-footer {
+  font-family: "Roboto", sans-serif;
+  color: var(--main-bcg-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+} */
+.auth-nav-item:hover,
+.auth-nav-item:focus {
+  color: var(--brand-color);
+}
+.auth-nav.link {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+}
+.color-top {
+  color: var(--brand-text-color2);
+}
+.active {
+  color: var(--brand-color);
+}
+.site-nav-link:focus,
+.site-nav-link:hover {
+  color: var(--brand-color);
+}
+.h3-title {
+  color: var(--brand-text-color2);
+  font-size: 16px;
+  line-height: 1, 875;
+  letter-spacing: 0.03em;
+}
+/* ---------- Основной контент (Герой) ---------- */
+
+.portfolio-btn:focus,
+.portfolio-btn:hover {
+  color: var(--main-bcg-color);
+  background-color: var(--brand-color);
+}
+.portfolio-btn {
+  cursor: pointer;
+}
+.h1-hidden {
+  display: none;
+}
+
+/* --------- Подвал сайта (Футтер) --------- */
+
+.footer {
+  padding-top: 60px;
+  background-color: var(--footer-color);
+  position: absolute;
+  width: 1600px;
+  height: 252px;
+}
+.logo-studio-footer {
+  color: var(--main-bcg-color);
+}
+.nav-info-footer {
+}
+.auth-nav-link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+.color-footer-100 {
+  color: rgba(255, 255, 255, 1);
+}
+.color-footer-60 {
+  color: rgba(255, 255, 255, 0.6);
+}
