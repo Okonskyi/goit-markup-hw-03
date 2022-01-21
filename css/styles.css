@@ -30,9 +30,30 @@ body {
   color: var(--brand-text-color1);
   background-color: var(--main-bcg-color);
 }
-
+.container {
+  width: 1200px;
+}
 /* ---------- Шапка сайта (Хеддер) ---------- */
-
+.header-div,
+.logo-div,
+.nav-div,
+.auth-div,
+.auth-nav {
+  display: flex;
+  justify-content: center;
+}
+.header-div {
+  width: 1600px;
+  height: 80px;
+}
+.nav-div {
+  width: 294px;
+  height: 16px;
+  /*  margin: 453px 32px 853px 32px; */
+  margin-left: 453px;
+}
+.site-div {
+}
 .logo {
   font-family: "Raleway", sans-serif;
   /*background-color: var(--main-bcg-color);*/
