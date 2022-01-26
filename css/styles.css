@@ -6,6 +6,20 @@
   --brand-text-color2: #757575;
   --footer-color: #2f303a;
 }
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--brand-text-color1);
+  background-color: var(--main-bcg-color);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
 h3 {
   font-family: "Roboto", sans-serif;
   color: var(--brand-text-color1);
@@ -25,43 +39,29 @@ a {
   text-decoration: none;
   color: var(--brand-text-color1);
 }
-body {
-  font-family: "Roboto", sans-serif;
-  color: var(--brand-text-color1);
-  background-color: var(--main-bcg-color);
+
+img {
+  display: block;
 }
-.container {
-  width: 1200px;
-}
+
 /* ---------- Шапка сайта (Хеддер) ---------- */
-.header-div,
-.logo-div,
-.nav-div,
-.auth-div,
-.auth-nav {
-  display: flex;
-  justify-content: center;
-}
-.header-div {
+
+.conteiner {
   width: 1600px;
-  height: 80px;
+  margin: 0 auto;
 }
-.nav-div {
-  width: 294px;
-  height: 16px;
-  /*  margin: 453px 32px 853px 32px; */
-  margin-left: 453px;
-}
-.site-div {
+.header__conteiner {
+  display: flex;
 }
 .logo {
   font-family: "Raleway", sans-serif;
-  /*background-color: var(--main-bcg-color);*/
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.4;
   letter-spacing: 0.03em;
+  margin-left: 215px;
+  margin-top: 24px;
 }
 .logo-web {
   color: var(--brand-color);
@@ -69,7 +69,16 @@ body {
 .logo-studio-top {
   color: var(--brand-text-color1);
 }
-.site-nav-item {
+.nav {
+  display: flex;
+  /* justify-content: flex-start; */
+}
+.nav__list {
+  display: flex;
+  margin-left: 91px;
+  /* border: 1px solid tomato; */
+}
+.nav__link {
   font-family: "Roboto", sans-serif;
   color: var(--brand-text-color1);
   background-color: var(--main-bcg-color);
@@ -78,52 +87,34 @@ body {
   font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.02em;
+  padding: 32px 0;
+  display: block;
+  /* text-align: center; */
 }
-.site-nav-item:hover,
-.site-nav-item:focus {
+.nav__link:focus,
+.nav__link:hover {
   color: var(--brand-color);
 }
-/*.site-nav-info-top {
-  font-family: "Roboto", sans-serif;
-  color: var(--brand-text-color1);
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
+.site-nav-info-top {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
-.site-nav-link {
-  font-family: "Roboto", sans-serif;
-  color: var(--brand-text-color1);
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
+.nav__list .nav__item + .nav__item {
+  margin-left: 50px;
 }
-/*.nav-info-top {
-  font-family: "Roboto", sans-serif;
-  color: var(--brand-text-color2);
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
-} 
-.nav-info-footer {
-  font-family: "Roboto", sans-serif;
-  color: var(--main-bcg-color);
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
-} */
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+  margin-right: 215px;
+}
+.auth-nav .auth-nav-item + .auth-nav-item {
+  margin-left: 50px;
+}
 .auth-nav-item:hover,
 .auth-nav-item:focus {
   color: var(--brand-color);
 }
-.auth-nav.link {
+.auth-nav-item {
+  padding-top: 32px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -137,10 +128,23 @@ body {
 .active {
   color: var(--brand-color);
 }
-.site-nav-link:focus,
-.site-nav-link:hover {
-  color: var(--brand-color);
+.top-line {
+  background-color: #ececec;
+  height: 1px;
 }
+/* ---------------------тестирую----------------------- */
+
+/* --------------------протестировано----------------- */
+
+/* .site-nav {
+  display: flex;
+  justify-content: center;
+  margin: 32px 853px 32px 91px;
+  height: 16px;
+  width: 294px;
+  height: 16px;
+} */
+
 .h3-title {
   color: var(--brand-text-color2);
   font-size: 16px;
@@ -173,16 +177,23 @@ body {
 .logo-studio-footer {
   color: var(--main-bcg-color);
 }
-.nav-info-footer {
-}
-.auth-nav-link {
+.footer-nav-link {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  margin-bottom: 9px;
 }
-
+.footer-nav {
+  display: flex;
+  margin-right: 215px;
+  margin: 20px 1154px 60px 215px;
+  /* : 215px;
+  margin-bottom: 60px; */
+  display: flex;
+  flex-direction: column;
+}
 .color-footer-100 {
   color: rgba(255, 255, 255, 1);
 }
